@@ -19,6 +19,3 @@ Seguimiento del progreso semana a semana
 ¡Y un dashboard principal donde ves todo junto!
 
 
-
-Librerias instaladas:
-argon2-cffi(backend hash password)
