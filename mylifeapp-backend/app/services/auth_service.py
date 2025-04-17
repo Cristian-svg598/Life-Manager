@@ -1,4 +1,4 @@
-from .repositories import create_user, get_user_by_username, get_user_by_email
+from app.repositories.auth_repositorie import create_user, get_user_by_username, get_user_by_email
 from flask_jwt_extended import jwt_required, get_jwt_identity, create_access_token, set_access_cookies
 
 def register_user(data):

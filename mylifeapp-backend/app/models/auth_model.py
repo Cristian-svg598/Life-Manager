@@ -1,7 +1,5 @@
 from argon2 import PasswordHasher
-from flask_sqlalchemy import SQLAlchemy
-
-db = SQLAlchemy()
+from app import db 
 
 ph = PasswordHasher()
 
@@ -16,7 +14,7 @@ class User(db.Model):
 
     def check_password(self, password):
         try:
-            ph.verify(self.password_hash, password)  
+            ph.verify(self.password_hash, password)
             return True
         except Exception as e:
             return False

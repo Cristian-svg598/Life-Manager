@@ -1,4 +1,4 @@
-from .models import User, db
+from app.models.auth_model import User, db
 
 def get_user_by_username(username):
     return User.query.filter_by(username=username).first()
